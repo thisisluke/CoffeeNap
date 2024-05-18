@@ -15,6 +15,7 @@
 		06485CD82BF8BF31008B7CFA /* CoffeeNapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06485CD72BF8BF31008B7CFA /* CoffeeNapTests.swift */; };
 		06485CE22BF8BF31008B7CFA /* CoffeeNapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06485CE12BF8BF31008B7CFA /* CoffeeNapUITests.swift */; };
 		06485CE42BF8BF31008B7CFA /* CoffeeNapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06485CE32BF8BF31008B7CFA /* CoffeeNapUITestsLaunchTests.swift */; };
+		068FDD3B2BF8C59E0097434C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 068FDD3A2BF8C59E0097434C /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				068FDD3B2BF8C59E0097434C /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +99,7 @@
 		06485CBF2BF8BF2F008B7CFA /* CoffeeNap */ = {
 			isa = PBXGroup;
 			children = (
+				068FDD3C2BF8C7AD0097434C /* App */,
 				06485CC02BF8BF2F008B7CFA /* AppDelegate.swift */,
 				06485CC22BF8BF2F008B7CFA /* SceneDelegate.swift */,
 				06485CC42BF8BF2F008B7CFA /* HomeViewController.swift */,
@@ -124,6 +127,13 @@
 			path = CoffeeNapUITests;
 			sourceTree = "<group>";
 		};
+		068FDD3C2BF8C7AD0097434C /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +150,9 @@
 			dependencies = (
 			);
 			name = CoffeeNap;
+			packageProductDependencies = (
+				068FDD3A2BF8C59E0097434C /* SnapKit */,
+			);
 			productName = CoffeeNap;
 			productReference = 06485CBD2BF8BF2F008B7CFA /* CoffeeNap.app */;
 			productType = "com.apple.product-type.application";
@@ -212,6 +225,9 @@
 				Base,
 			);
 			mainGroup = 06485CB42BF8BF2F008B7CFA;
+			packageReferences = (
+				068FDD392BF8C59E0097434C /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 06485CBE2BF8BF2F008B7CFA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -595,6 +611,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		068FDD392BF8C59E0097434C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		068FDD3A2BF8C59E0097434C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 068FDD392BF8C59E0097434C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 06485CB52BF8BF2F008B7CFA /* Project object */;
 }
