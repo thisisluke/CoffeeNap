@@ -1,0 +1,147 @@
+[
+    {
+        "id": "341030c2-8830-4ea7-9bd2-5be813f04973",
+        "icon": "flame.fill",
+        "title": "Water",
+        "subtitle": "View photos",
+        "color": "#283747",
+        "section": 1
+    },
+    {
+        "id": "e78b98fe-1666-46f6-b6dd-78901e512f67",
+        "icon": "book.closed.fill",
+        "title": "Weather",
+        "subtitle": "View favorites",
+        "color": "#16A085",
+        "section": 0
+    },
+    {
+        "id": "01ed91c5-07b8-42b2-98ac-7a1e97b1cc05",
+        "icon": "airplane",
+        "title": "Security",
+        "subtitle": "Configure your settings",
+        "color": "#3498DB",
+        "section": 0
+    },
+    {
+        "id": "d05820d8-206c-4ecf-b29b-2cf621c5fbed",
+        "icon": "house.fill",
+        "title": "Shopping",
+        "subtitle": "Read your books",
+        "color": "#117A65",
+        "section": 0
+    },
+    {
+        "id": "a3ea00c0-bbb7-4c71-8d42-654ad9a75ed6",
+        "icon": "leaf.fill",
+        "title": "Night Mode",
+        "subtitle": "Manage your vehicles",
+        "color": "#9B59B6",
+        "section": 0
+    },
+    {
+        "id": "07c51c0e-7dc9-43e1-94e9-603536d1e775",
+        "icon": "star.fill",
+        "title": "Notifications",
+        "subtitle": "Update your profile",
+        "color": "#76D7C4",
+        "section": 1
+    },
+    {
+        "id": "0465d857-df4b-4241-825a-5915cf288334",
+        "icon": "camera.fill",
+        "title": "Reading",
+        "subtitle": "Shop online",
+        "color": "#A04000",
+        "section": 3
+    },
+    {
+        "id": "25c0a6ee-1f91-478e-ac7f-ef8aa4456a5b",
+        "icon": "car.fill",
+        "title": "Favorites",
+        "subtitle": "Search the web",
+        "color": "#1ABC9C",
+        "section": 1
+    },
+    {
+        "id": "19909797-f5d9-4e22-9622-062f608cee86",
+        "icon": "gear",
+        "title": "Maps",
+        "subtitle": "Energy consumption",
+        "color": "#D68910",
+        "section": 0
+    },
+    {
+        "id": "ac588c01-84e2-4275-ac51-46cbdb7938aa",
+        "icon": "lock.fill",
+        "title": "Profile",
+        "subtitle": "Secure your account",
+        "color": "#2C3E50",
+        "section": 1
+    },
+    {
+        "id": "d1a920ac-d6ce-4caf-8403-d086d34491fc",
+        "icon": "magnifyingglass",
+        "title": "Privacy",
+        "subtitle": "Turn on night mode",
+        "color": "#A569BD",
+        "section": 0
+    },
+    {
+        "id": "c301e1d2-0288-4f5e-b0e6-17da4adcd034",
+        "icon": "cart.fill",
+        "title": "Photos",
+        "subtitle": "Manage alerts",
+        "color": "#FF5733",
+        "section": 0
+    },
+    {
+        "id": "883ed1f0-a196-42fd-af48-24daf67adeba",
+        "icon": "drop.fill",
+        "title": "Search",
+        "subtitle": "Outdoor activities",
+        "color": "#7D3C98",
+        "section": 3
+    },
+    {
+        "id": "c9766639-7022-4dd0-b996-4f030a464c39",
+        "icon": "moon.fill",
+        "title": "Outdoors",
+        "subtitle": "Check flight status",
+        "color": "#581845",
+        "section": 2
+    },
+    {
+        "id": "dcf2a8dc-df0a-4634-841f-28fa9c7e48c2",
+        "icon": "map.fill",
+        "title": "Settings",
+        "subtitle": "Water usage details",
+        "color": "#341F97",
+        "section": 3
+    },
+    {
+        "id": "55270c85-d77a-4a79-b0d6-be67486b1210",
+        "icon": "person.crop.circle",
+        "title": "Drive",
+        "subtitle": "Check the weather",
+        "color": "#D35400",
+        "section": 0
+    },
+    {
+        "id": "9748227a-d120-4195-a5cd-ee5b1ba51920",
+        "icon": "bolt.fill",
+        "title": "Energy",
+        "subtitle": "Adjust privacy settings",
+        "color": "#C70039",
+        "section": 3
+    },
+    {
+        "id": "d33d8298-e1a1-4f3d-9f3f-0a58d35f77f6",
+        "icon": "bell.fill",
+        "title": "Flights",
+        "subtitle": "Explore maps",
+        "color": "#900C3F",
+        "section": 0
+    }
+]
+
