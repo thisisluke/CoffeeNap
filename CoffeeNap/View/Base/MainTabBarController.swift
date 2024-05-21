@@ -21,7 +21,8 @@ final class MainTabBarController: UITabBarController {
     }
 
     private lazy var homeVC: HomeViewController = {
-        let homeVC = HomeViewController()
+        let homeVM = HomeViewModel()
+        let homeVC = HomeViewController(viewModel: homeVM)
         homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 0)
         return homeVC
     }()
