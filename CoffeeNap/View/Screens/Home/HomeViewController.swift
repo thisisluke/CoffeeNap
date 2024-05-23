@@ -58,11 +58,11 @@ class HomeViewController: BaseViewController {
     }
     
     private func setupDataSource() {
-        collectionView.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: HomeCollectionViewCell.identifier)
+        collectionView.register(cellWithClass: HomeCollectionViewCell.self)
         
         dataSource = UICollectionViewDiffableDataSource<Int, HomeItem>(collectionView: collectionView) { collectionView, indexPath, item -> UICollectionViewCell? in
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCollectionViewCell.identifier, for: indexPath) as? HomeCollectionViewCell
-            cell?.configure(with: item)
+            let cell = collectionView.dequeueReusableCell(withClass: HomeCollectionViewCell.self, for: indexPath)
+            cell.configure(with: item)
             return cell
         }
     }

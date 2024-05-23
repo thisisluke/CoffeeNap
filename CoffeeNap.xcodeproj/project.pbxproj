@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		061181D92BFF507600CC581E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061181D82BFF507600CC581E /* UIView+Extension.swift */; };
+		061181DB2BFF527400CC581E /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061181DA2BFF527400CC581E /* UICollectionView+Extension.swift */; };
 		06485CC12BF8BF2F008B7CFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06485CC02BF8BF2F008B7CFA /* AppDelegate.swift */; };
 		06485CC32BF8BF2F008B7CFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06485CC22BF8BF2F008B7CFA /* SceneDelegate.swift */; };
 		06485CC52BF8BF2F008B7CFA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06485CC42BF8BF2F008B7CFA /* HomeViewController.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		061181D82BFF507600CC581E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		061181DA2BFF527400CC581E /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		06485CBD2BF8BF2F008B7CFA /* CoffeeNap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeNap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06485CC02BF8BF2F008B7CFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06485CC22BF8BF2F008B7CFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			children = (
 				06B777F62BFCC39F00564519 /* UIColor+Extension.swift */,
 				061181D82BFF507600CC581E /* UIView+Extension.swift */,
+				061181DA2BFF527400CC581E /* UICollectionView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				068FDD4F2BF8C96B0097434C /* BaseViewController.swift in Sources */,
+				061181DB2BFF527400CC581E /* UICollectionView+Extension.swift in Sources */,
 				068FDD522BF8C9CB0097434C /* HomeViewModel.swift in Sources */,
 				06485CC52BF8BF2F008B7CFA /* HomeViewController.swift in Sources */,
 				06B777F72BFCC39F00564519 /* UIColor+Extension.swift in Sources */,

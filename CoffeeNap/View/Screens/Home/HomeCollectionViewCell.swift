@@ -8,9 +8,7 @@
 import UIKit
 import SnapKit
 
-class HomeCollectionViewCell: UICollectionViewCell {
-    static let identifier = "HomeCollectionViewCell"
-    
+class HomeCollectionViewCell: UICollectionViewCell {    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
