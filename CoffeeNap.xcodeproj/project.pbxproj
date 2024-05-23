@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061181D92BFF507600CC581E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061181D82BFF507600CC581E /* UIView+Extension.swift */; };
 		06485CC12BF8BF2F008B7CFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06485CC02BF8BF2F008B7CFA /* AppDelegate.swift */; };
 		06485CC32BF8BF2F008B7CFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06485CC22BF8BF2F008B7CFA /* SceneDelegate.swift */; };
 		06485CC52BF8BF2F008B7CFA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06485CC42BF8BF2F008B7CFA /* HomeViewController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		061181D82BFF507600CC581E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		06485CBD2BF8BF2F008B7CFA /* CoffeeNap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeNap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06485CC02BF8BF2F008B7CFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06485CC22BF8BF2F008B7CFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				06B777F62BFCC39F00564519 /* UIColor+Extension.swift */,
+				061181D82BFF507600CC581E /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				06485CC12BF8BF2F008B7CFA /* AppDelegate.swift in Sources */,
 				06485CC32BF8BF2F008B7CFA /* SceneDelegate.swift in Sources */,
 				068FDD4B2BF8C9090097434C /* Constants.swift in Sources */,
+				061181D92BFF507600CC581E /* UIView+Extension.swift in Sources */,
 				06B777F52BFCC37C00564519 /* HomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
