@@ -20,12 +20,23 @@ class HomeCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func configure(with item: HomeItem) {
+        iconImageView.image = UIImage(systemName: item.icon)
+        titleLabel.text = item.title
+        subtitleLabel.text = item.subtitle
+        iconBackgroundView.backgroundColor = UIColor(hex: item.color)
+    }
+    
     private func setupViews() {
-        contentView.addSubview(iconBackgroundView)
-        contentView.addSubview(iconImageView)
-        contentView.addSubview(titleLabel)
-        contentView.addSubview(subtitleLabel)
-        contentView.addSubview(seperator)
+        contentView.addSubviews(
+            [
+                iconBackgroundView,
+                iconImageView,
+                titleLabel,
+                subtitleLabel,
+                seperator
+            ]
+        )
         
         iconBackgroundView.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(16)
@@ -57,13 +68,6 @@ class HomeCollectionViewCell: UICollectionViewCell {
             make.bottom.equalToSuperview()
             make.height.equalTo(0.5)
         }
-    }
-    
-    func configure(with item: HomeItem) {
-        iconImageView.image = UIImage(systemName: item.icon)
-        titleLabel.text = item.title
-        subtitleLabel.text = item.subtitle
-        iconBackgroundView.backgroundColor = UIColor(hex: item.color)
     }
     
     // MARK: - Subviews
