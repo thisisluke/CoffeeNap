@@ -15,6 +15,8 @@ final class MainTabBarController: UITabBarController {
         tabBar.unselectedItemTintColor = .systemGray
 
         let homeNav = UINavigationController(rootViewController: homeVC)
+        homeNav.navigationBar.prefersLargeTitles = true
+        
         let settingNav = UINavigationController(rootViewController: settingVC)
 
         viewControllers = [homeNav, settingNav]
