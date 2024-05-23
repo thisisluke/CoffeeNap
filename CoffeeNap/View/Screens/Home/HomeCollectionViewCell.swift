@@ -48,7 +48,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
         }
         
         titleLabel.snp.makeConstraints { make in
-            make.leading.equalTo(iconBackgroundView.snp.trailing).offset(8)
+            make.leading.equalTo(iconBackgroundView.snp.trailing).offset(15)
             make.trailing.equalToSuperview().offset(-16)
             make.top.equalToSuperview().offset(10)
         }
