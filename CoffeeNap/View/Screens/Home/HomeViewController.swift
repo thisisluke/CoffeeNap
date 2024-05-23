@@ -51,9 +51,19 @@ class HomeViewController: BaseViewController {
             let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
             
             let section = NSCollectionLayoutSection(group: group)
-            section.interGroupSpacing = 30
+            
+            section.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
+            
+            // Register decoration view
+            let backgroundDecoration = NSCollectionLayoutDecorationItem.background(elementKind: "sectionBackground")
+            backgroundDecoration.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
+            section.decorationItems = [backgroundDecoration]
+            
             return section
         }
+        
+        layout.register(BaseSectionBackgroundView.self, forDecorationViewOfKind: "sectionBackground")
+        
         return layout
     }
     
@@ -63,6 +73,7 @@ class HomeViewController: BaseViewController {
         dataSource = UICollectionViewDiffableDataSource<Int, HomeItem>(collectionView: collectionView) { collectionView, indexPath, item -> UICollectionViewCell? in
             let cell = collectionView.dequeueReusableCell(withClass: HomeCollectionViewCell.self, for: indexPath)
             cell.configure(with: item)
+            cell.seperator.isHidden = collectionView.numberOfItems(inSection: indexPath.section) == indexPath.row + 1
             return cell
         }
     }

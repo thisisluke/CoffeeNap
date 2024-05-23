@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		061181D92BFF507600CC581E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061181D82BFF507600CC581E /* UIView+Extension.swift */; };
 		061181DB2BFF527400CC581E /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061181DA2BFF527400CC581E /* UICollectionView+Extension.swift */; };
+		061181DD2BFF5F5500CC581E /* BaseSectionBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061181DC2BFF5F5500CC581E /* BaseSectionBackgroundView.swift */; };
 		06485CC12BF8BF2F008B7CFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06485CC02BF8BF2F008B7CFA /* AppDelegate.swift */; };
 		06485CC32BF8BF2F008B7CFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06485CC22BF8BF2F008B7CFA /* SceneDelegate.swift */; };
 		06485CC52BF8BF2F008B7CFA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06485CC42BF8BF2F008B7CFA /* HomeViewController.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		061181D82BFF507600CC581E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		061181DA2BFF527400CC581E /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		061181DC2BFF5F5500CC581E /* BaseSectionBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSectionBackgroundView.swift; sourceTree = "<group>"; };
 		06485CBD2BF8BF2F008B7CFA /* CoffeeNap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeNap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06485CC02BF8BF2F008B7CFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06485CC22BF8BF2F008B7CFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			children = (
 				068FDD4E2BF8C96B0097434C /* BaseViewController.swift */,
 				06B777EF2BFC7EDA00564519 /* MainTabBarController.swift */,
+				061181DC2BFF5F5500CC581E /* BaseSectionBackgroundView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				06485CC12BF8BF2F008B7CFA /* AppDelegate.swift in Sources */,
 				06485CC32BF8BF2F008B7CFA /* SceneDelegate.swift in Sources */,
 				068FDD4B2BF8C9090097434C /* Constants.swift in Sources */,
+				061181DD2BFF5F5500CC581E /* BaseSectionBackgroundView.swift in Sources */,
 				061181D92BFF507600CC581E /* UIView+Extension.swift in Sources */,
 				06B777F52BFCC37C00564519 /* HomeCollectionViewCell.swift in Sources */,
 			);
