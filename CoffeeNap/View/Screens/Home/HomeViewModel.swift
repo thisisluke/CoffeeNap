@@ -9,7 +9,7 @@ import Combine
 import Foundation
 
 final class HomeViewModel {
-    @Published var sections: [Int: [HomeItem]] = [:]
+    @Published var sections: [HomeSection] = []
     var cancellables: Set<AnyCancellable> = []
 
     init() {
@@ -26,24 +26,19 @@ final class HomeViewModel {
 
         do {
             let data = try Data(contentsOf: url)
-            let items = try decoder.decode([HomeItem].self, from: data)
-            self.organizeItemsBySection(items: items)
+            let sections = try decoder.decode([HomeSection].self, from: data)
+            self.sections = sections
         } catch {
             print("Error decoding JSON: \(error)")
         }
     }
+}
 
-    private func organizeItemsBySection(items: [HomeItem]) {
-        let groupedItems = Dictionary(grouping: items) { $0.section }
-
-        self.sections = groupedItems.mapValues { group in
-            group.sorted { $0.title.localizedCompare($1.title) == .orderedAscending }
-        }
-
-        self.sections = self.sections.sorted(by: { $0.key < $1.key }).reduce(into: [:]) { result, tuple in
-            result[tuple.key] = tuple.value
-        }
-    }
+struct HomeSection: Codable, Hashable {
+    let id: String
+    let order: Int
+    let title: String
+    let items: [HomeItem]
 }
 
 struct HomeItem: Codable, Hashable {
@@ -52,5 +47,4 @@ struct HomeItem: Codable, Hashable {
     let title: String
     let subtitle: String
     let color: String
-    let section: Int
 }

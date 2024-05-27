@@ -9,8 +9,16 @@ import Combine
 import UIKit
 
 class HomeViewController: BaseViewController {
+    enum Section: Hashable {
+        case main(HomeSection)
+    }
+    
+    enum CellType: Hashable {
+        case basic(HomeItem)
+    }
+    
     private var collectionView: UICollectionView!
-    private var dataSource: UICollectionViewDiffableDataSource<Int, HomeItem>!
+    private var dataSource: UICollectionViewDiffableDataSource<Section, CellType>!
     
     private let viewModel: HomeViewModel
     
@@ -45,11 +53,14 @@ class HomeViewController: BaseViewController {
     private func setupDataSource() {
         collectionView.register(cellWithClass: HomeCollectionViewCell.self)
         
-        dataSource = UICollectionViewDiffableDataSource<Int, HomeItem>(collectionView: collectionView) { collectionView, indexPath, item -> UICollectionViewCell? in
-            let cell = collectionView.dequeueReusableCell(withClass: HomeCollectionViewCell.self, for: indexPath)
-            cell.configure(with: item)
-            cell.seperator.isHidden = collectionView.numberOfItems(inSection: indexPath.section) == indexPath.row + 1
-            return cell
+        dataSource = UICollectionViewDiffableDataSource<Section, CellType>(collectionView: collectionView) { collectionView, indexPath, cellType -> UICollectionViewCell? in
+            switch cellType {
+            case .basic(let item):
+                let cell = collectionView.dequeueReusableCell(withClass: HomeCollectionViewCell.self, for: indexPath)
+                cell.configure(with: item)
+                cell.seperator.isHidden = collectionView.numberOfItems(inSection: indexPath.section) == indexPath.row + 1
+                return cell
+            }
         }
     }
     
@@ -62,13 +73,12 @@ class HomeViewController: BaseViewController {
             .store(in: &cancellables)
     }
     
-    private func applySnapshot(sections: [Int: [HomeItem]]) {
-        var snapshot = NSDiffableDataSourceSnapshot<Int, HomeItem>()
-        for section in sections.keys.sorted() {
-            snapshot.appendSections([section])
-            if let items = sections[section] {
-                snapshot.appendItems(items, toSection: section)
-            }
+    private func applySnapshot(sections: [HomeSection]) {
+        var snapshot = NSDiffableDataSourceSnapshot<Section, CellType>()
+        snapshot.appendSections(sections.map { Section.main($0) })
+        
+        for section in sections {
+            snapshot.appendItems(section.items.map { CellType.basic($0) }, toSection: Section.main(section))
         }
         dataSource.apply(snapshot, animatingDifferences: true)
     }

@@ -1,147 +1,149 @@
 [
     {
-        "id": "341030c2-8830-4ea7-9bd2-5be813f04973",
-        "icon": "flame.fill",
-        "title": "Water",
-        "subtitle": "View photos",
-        "color": "#283747",
-        "section": 1
+        "id": "8f991865-4c9d-4970-869d-4d6229b0bb74",
+        "order": 0,
+        "title": "Travel Options",
+        "items": [
+            {
+                "id": "1a87b3f5-e935-41f8-8f57-01ad230ac286",
+                "icon": "airplane",
+                "title": "Flights",
+                "subtitle": "Book and manage flights",
+                "color": "#3498DB"
+            },
+            {
+                "id": "23f6f971-c529-4461-b6b1-76f42c93834e",
+                "icon": "car.fill",
+                "title": "Car Rentals",
+                "subtitle": "Find rental deals",
+                "color": "#F39C12"
+            },
+            {
+                "id": "b590f7ce-0136-4206-bf58-ea828e845477",
+                "icon": "bus.fill",
+                "title": "Bus Trips",
+                "subtitle": "Bus routes and tickets",
+                "color": "#9B59B6"
+            }
+        ]
     },
     {
-        "id": "e78b98fe-1666-46f6-b6dd-78901e512f67",
-        "icon": "book.closed.fill",
-        "title": "Weather",
-        "subtitle": "View favorites",
-        "color": "#16A085",
-        "section": 0
+        "id": "cdbe0465-5a9d-416e-b9b2-2bd83f98adfa",
+        "order": 1,
+        "title": "Communication Tools",
+        "items": [
+            {
+                "id": "345f1faa-b881-46bb-8419-9c92a51796c0",
+                "icon": "message.fill",
+                "title": "Messages",
+                "subtitle": "Send and receive messages",
+                "color": "#8E44AD"
+            },
+            {
+                "id": "8f2f5761-7586-45c8-a2a5-48c592708f0e",
+                "icon": "phone.fill",
+                "title": "Calls",
+                "subtitle": "Make and receive calls",
+                "color": "#27AE60"
+            },
+            {
+                "id": "1e9f5239-43b1-4bd7-88d6-0e25b5d83cf8",
+                "icon": "envelope.fill",
+                "title": "Email",
+                "subtitle": "Check your inbox",
+                "color": "#3498DB"
+            },
+            {
+                "id": "847a8d8d-466d-4117-81b4-d6a90ae086bc",
+                "icon": "antenna.radiowaves.left.and.right",
+                "title": "Radio",
+                "subtitle": "Listen to the radio",
+                "color": "#F39C12"
+            },
+            {
+                "id": "33d0b7e9-7473-4f47-b9d0-6c5e17c3f585",
+                "icon": "faxmachine.fill",
+                "title": "Fax",
+                "subtitle": "Send documents",
+                "color": "#8E44AD"
+            }
+        ]
     },
     {
-        "id": "01ed91c5-07b8-42b2-98ac-7a1e97b1cc05",
-        "icon": "airplane",
-        "title": "Security",
-        "subtitle": "Configure your settings",
-        "color": "#3498DB",
-        "section": 0
+        "id": "cf48d09d-d191-4b0a-9853-d5a4bde458c2",
+        "order": 2,
+        "title": "Entertainment",
+        "items": [
+            {
+                "id": "a1172dca-d4f4-4de1-8af5-cabc7e9cfeae",
+                "icon": "tv.fill",
+                "title": "Movies and TV",
+                "subtitle": "Watch your favorite shows",
+                "color": "#C0392B"
+            },
+            {
+                "id": "9c3ad9b2-6f5e-4e98-9c60-e5f3ccfb9383",
+                "icon": "music.note",
+                "title": "Music",
+                "subtitle": "Listen to music",
+                "color": "#2980B9"
+            }
+        ]
     },
     {
-        "id": "d05820d8-206c-4ecf-b29b-2cf621c5fbed",
-        "icon": "house.fill",
-        "title": "Shopping",
-        "subtitle": "Read your books",
-        "color": "#117A65",
-        "section": 0
+        "id": "650e0beb-b785-4056-9f80-1d6017a9a3b4",
+        "order": 3,
+        "title": "Daily Essentials",
+        "items": [
+            {
+                "id": "ad53a34d-4a1e-4a9d-80c7-0c58e2e18d9b",
+                "icon": "cart.fill",
+                "title": "Shopping",
+                "subtitle": "Manage your purchases",
+                "color": "#E67E22"
+            },
+            {
+                "id": "cc7823c1-23f3-4fa9-a2d3-95715d97de94",
+                "icon": "house.fill",
+                "title": "Home",
+                "subtitle": "Control smart home devices",
+                "color": "#D35400"
+            },
+            {
+                "id": "20c3c22b-7a34-4a9a-90f6-06133797fbad",
+                "icon": "printer.fill",
+                "title": "Print",
+                "subtitle": "Print documents",
+                "color": "#BDC3C7"
+            }
+        ]
     },
     {
-        "id": "a3ea00c0-bbb7-4c71-8d42-654ad9a75ed6",
-        "icon": "leaf.fill",
-        "title": "Night Mode",
-        "subtitle": "",
-        "color": "#9B59B6",
-        "section": 0
-    },
-    {
-        "id": "07c51c0e-7dc9-43e1-94e9-603536d1e775",
-        "icon": "star.fill",
-        "title": "Notifications",
-        "subtitle": "Update your profile",
-        "color": "#76D7C4",
-        "section": 1
-    },
-    {
-        "id": "0465d857-df4b-4241-825a-5915cf288334",
-        "icon": "camera.fill",
-        "title": "Reading",
-        "subtitle": "Shop online",
-        "color": "#A04000",
-        "section": 3
-    },
-    {
-        "id": "25c0a6ee-1f91-478e-ac7f-ef8aa4456a5b",
-        "icon": "car.fill",
-        "title": "Favorites",
-        "subtitle": "Search the web",
-        "color": "#1ABC9C",
-        "section": 1
-    },
-    {
-        "id": "19909797-f5d9-4e22-9622-062f608cee86",
-        "icon": "gear",
-        "title": "Maps",
-        "subtitle": "Energy consumption",
-        "color": "#D68910",
-        "section": 0
-    },
-    {
-        "id": "ac588c01-84e2-4275-ac51-46cbdb7938aa",
-        "icon": "lock.fill",
-        "title": "Profile",
-        "subtitle": "Secure your account",
-        "color": "#2C3E50",
-        "section": 1
-    },
-    {
-        "id": "d1a920ac-d6ce-4caf-8403-d086d34491fc",
-        "icon": "magnifyingglass",
-        "title": "Privacy",
-        "subtitle": "Turn on night mode",
-        "color": "#A569BD",
-        "section": 0
-    },
-    {
-        "id": "c301e1d2-0288-4f5e-b0e6-17da4adcd034",
-        "icon": "cart.fill",
-        "title": "Photos",
-        "subtitle": "Manage alerts",
-        "color": "#FF5733",
-        "section": 0
-    },
-    {
-        "id": "883ed1f0-a196-42fd-af48-24daf67adeba",
-        "icon": "drop.fill",
-        "title": "Search",
-        "subtitle": "Outdoor activities",
-        "color": "#7D3C98",
-        "section": 3
-    },
-    {
-        "id": "c9766639-7022-4dd0-b996-4f030a464c39",
-        "icon": "moon.fill",
-        "title": "Outdoors",
-        "subtitle": "Check flight status",
-        "color": "#581845",
-        "section": 2
-    },
-    {
-        "id": "dcf2a8dc-df0a-4634-841f-28fa9c7e48c2",
-        "icon": "map.fill",
-        "title": "Settings",
-        "subtitle": "Water usage details",
-        "color": "#341F97",
-        "section": 3
-    },
-    {
-        "id": "55270c85-d77a-4a79-b0d6-be67486b1210",
-        "icon": "person.crop.circle",
-        "title": "Drive",
-        "subtitle": "Check the weather",
-        "color": "#D35400",
-        "section": 0
-    },
-    {
-        "id": "9748227a-d120-4195-a5cd-ee5b1ba51920",
-        "icon": "bolt.fill",
-        "title": "Energy",
-        "subtitle": "Adjust privacy settings",
-        "color": "#C70039",
-        "section": 3
-    },
-    {
-        "id": "d33d8298-e1a1-4f3d-9f3f-0a58d35f77f6",
-        "icon": "bell.fill",
-        "title": "Flights",
-        "subtitle": "Explore maps",
-        "color": "#900C3F",
-        "section": 0
+        "id": "59a2bf2d-e5d5-4b0b-9868-2e2f0c5408b6",
+        "order": 4,
+        "title": "Settings and Preferences",
+        "items": [
+            {
+                "id": "0f776e1c-29c3-4d36-af47-9965a5d531d8",
+                "icon": "gear",
+                "title": "System Settings",
+                "subtitle": "Adjust your device settings",
+                "color": "#34495E"
+            },
+            {
+                "id": "6fae6bdc-468b-49b5-bfdf-6bfe20db7d87",
+                "icon": "lock.fill",
+                "title": "Security",
+                "subtitle": "Enhance account security",
+                "color": "#2C3E50"
+            },
+            {
+                "id": "cb1e5e2d-788e-4bde-9f1e-e496b1f8077e",
+                "icon": "clock.fill",
+                "title": "Time Management",
+                "subtitle": "Set alarms and timers",
+                "color": "#C0392B"
+            }
+        ]
     }
 ]
-
