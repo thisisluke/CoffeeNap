@@ -23,6 +23,7 @@
 		068FDD4B2BF8C9090097434C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068FDD4A2BF8C9090097434C /* Constants.swift */; };
 		068FDD4F2BF8C96B0097434C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068FDD4E2BF8C96B0097434C /* BaseViewController.swift */; };
 		068FDD522BF8C9CB0097434C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068FDD512BF8C9CB0097434C /* HomeViewModel.swift */; };
+		06AE828C2C0F4311004F68B0 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AE828B2C0F4311004F68B0 /* LabelViewController.swift */; };
 		06B777F02BFC7EDA00564519 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B777EF2BFC7EDA00564519 /* MainTabBarController.swift */; };
 		06B777F32BFCBB4000564519 /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = 06B777F22BFCBB4000564519 /* home.json */; };
 		06B777F52BFCC37C00564519 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B777F42BFCC37C00564519 /* HomeCollectionViewCell.swift */; };
@@ -66,6 +67,7 @@
 		068FDD4A2BF8C9090097434C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		068FDD4E2BF8C96B0097434C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		068FDD512BF8C9CB0097434C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		06AE828B2C0F4311004F68B0 /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 		06B777EF2BFC7EDA00564519 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		06B777F22BFCBB4000564519 /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
 		06B777F42BFCC37C00564519 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 		068FDD412BF8C8830097434C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				06AE828A2C0F415B004F68B0 /* Label */,
 				068FDD422BF8C88E0097434C /* Home */,
 			);
 			path = Screens;
@@ -269,6 +272,14 @@
 			children = (
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		06AE828A2C0F415B004F68B0 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				06AE828B2C0F4311004F68B0 /* LabelViewController.swift */,
+			);
+			path = Label;
 			sourceTree = "<group>";
 		};
 		06B777F12BFCB93B00564519 /* Files */ = {
@@ -427,6 +438,7 @@
 				061181DF2BFF608100CC581E /* UICollectionViewLayout+Extension.swift in Sources */,
 				068FDD4B2BF8C9090097434C /* Constants.swift in Sources */,
 				061181DD2BFF5F5500CC581E /* BaseSectionBackgroundView.swift in Sources */,
+				06AE828C2C0F4311004F68B0 /* LabelViewController.swift in Sources */,
 				061181D92BFF507600CC581E /* UIView+Extension.swift in Sources */,
 				06B777F52BFCC37C00564519 /* HomeCollectionViewCell.swift in Sources */,
 			);

@@ -6,9 +6,9 @@
         "items": [
             {
                 "id": "1a87b3f5-e935-41f8-8f57-01ad230ac286",
-                "icon": "airplane",
-                "title": "Flights",
-                "subtitle": "Book and manage flights",
+                "icon": "doc.plaintext.fill",
+                "title": "UILabel",
+                "subtitle": "A view that displays one or more lines of informational text.",
                 "color": "#3498DB"
             },
             {

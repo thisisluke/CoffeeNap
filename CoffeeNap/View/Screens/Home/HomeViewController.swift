@@ -47,6 +47,7 @@ class HomeViewController: BaseViewController {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: .createBasicLayout())
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.backgroundColor = .systemGroupedBackground
+        collectionView.delegate = self
         view.addSubview(collectionView)
     }
     
@@ -81,5 +82,19 @@ class HomeViewController: BaseViewController {
             snapshot.appendItems(section.items.map { CellType.basic($0) }, toSection: Section.main(section))
         }
         dataSource.apply(snapshot, animatingDifferences: true)
+    }
+}
+
+// MARK: - UICollectionView Delegate
+
+extension HomeViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let section = viewModel.sections[indexPath.section]
+        let item = section.items[indexPath.item]
+        
+        if item.id == "1a87b3f5-e935-41f8-8f57-01ad230ac286" {
+            let viewController = LabelViewController()
+            navigationController?.pushViewController(viewController, animated: true)
+        }
     }
 }
